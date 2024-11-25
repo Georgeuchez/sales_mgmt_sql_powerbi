@@ -1,4 +1,4 @@
-# **PowerBI and SQL for SALE MGMT**
+# **PowerBI and SQL for SALES MGMT**
 
 
 ![Overview](Images/Overview.png)
