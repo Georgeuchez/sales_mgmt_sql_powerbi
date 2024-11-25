@@ -1,39 +1,39 @@
-# **Sales Management Project using PowerBI and SQL**
+# **PowerBI and SQL for SALE MGMT**
 
 
 ![Overview](Images/Overview.png)
 
 
-## **Business Request and User Stories**
+This project involved creating an executive sales report for sales managers, leveraging Power BI and SQL. The aim was to provide insightful dashboards tailored to the needs of sales managers and representatives. Below is a breakdown of the business request and user stories that guided the project's development, ensuring that acceptance criteria were met.
 
-The business request for this data analyst project was an executive sales report for sales managers. Based on the request that was made from the business, we defined the following user stories to fulfill delivery and to ensure that acceptance criteria were maintained throughout the project.
+## **Business Request and User Stories**
+The project stemmed from a request for an executive sales report. Based on this, user stories were outlined to deliver value and align with business goals.
 | **No.** | **As a (role)** | **I want (request / demand)** | **So that I (user value)** | **Acceptance Criteria** |
 | :--- | :----------- | :-------- | :------- | :------------------------- |
-| 1   | Sales Manager | A dashboard overview of sales in year 2020 and 2021 | Can follow better which customers and products sells the best | A Power BI dashboard which let us see top 10 products and customers after applying different filters available on dashboard |
-| 2   | Sales Manager | A dashboard overview of sales and budget | Can follow sales over time against budget | A Power BI dashboard with graph comparing against budget |
-| 3   | Sales Representative | A detailed overview of Sales per Customer | Can follow up my customers that buys the most and who we can sell more to | A Power BI dashboard which allows me to filter data for each customer |
-| 4   | Sales Representative | A detailed overview of Sales per Product | Can follow up my Products that sells the most | A Power BI dashboard which allows me to filter data for each Product |
+| 1   | Sales Manager | A dashboard overview of sales in year 2020 and 2021 | Identify top customers and products | A Power BI dashboard displaying the top 10 products and customers with filtering options. |
+| 2   | Sales Manager | A dashboard comparing sales and budget | Track sales performance against budget | A Power BI dashboard with graphs comparing sales over time to budget data |
+| 3   | Sales Representative | A detailed view of Sales per Customer | Monitor high-value customers and identify opportunities | A Power BI dashboard with filters to analyze sales for each customer |
+| 4   | Sales Representative | A detailed view of Sales per Product | Track top-performing products | A Power BI dashboard with filters to analyze sales for each Product |
 
 ## **Data Cleansing & Transformation (SQL)**
 
-- To create the necessary data model for doing analysis and fulfilling the business needs defined in the user stories the following tables were extracted using SQL.
-- One data source [_FACT_SentSalesBudget_](Data_for_Power_BI/FACT_SentSalesBudget.xlsx) were provided in Excel format and were connected in the data model in a later step of the process.
-- Below are the SQL statements for cleansing and transforming necessary data.
+To build the necessary data model for analysis and reporting, data was extracted and transformed using SQL. This included cleansing and preparing the data for integration into Power BI.
+
+The following tables were extracted and processed:
 
   1. [_DIM_Calendar.sql_](SQL_Queries/DIM_Calendar.sql)
   2. [_DIM_Customers.sql_](SQL_Queries/DIM_Customers.sql)
   3. [_DIM_Product.sql_](SQL_Queries/DIM_Product.sql)
   4. [_FACT_InternetSales.sql_](SQL_Queries/FACT_InternetSales.sql)
 
+Additionally, a supplementary data source, FACT_SentSalesBudget, was provided in Excel format and integrated into the data model later in the process.
 
 ![SQL_Queries_Collage](Images/SQL_Queries_Collage.png)
 
 
 ## **Data Model**
 
-Below is a screenshot of the data model after cleansed, prepared tables were read into Power BI and after creating required measures.
-
-This data model also shows how [_FACT_InternetSales_](Data_for_Power_BI/FACT_InternetSales.csv) and [_FACT_Budget_](Data_for_Power_BI/FACT_SentSalesBudget.xlsx) has been connected to other necessary DIM tables.
+After cleansing and preparing the data, it was imported into Power BI, and a data model was created. The model connects FACT_InternetSales and FACT_Budget with key dimension tables such as DIM_Calendar, DIM_Customers, and DIM_Product to enable comprehensive analysis and reporting.
 
 
 ![Data Model](Images/Data_Modelling_Screenshot.png)
@@ -41,20 +41,20 @@ This data model also shows how [_FACT_InternetSales_](Data_for_Power_BI/FACT_Int
 
 ## **Sales Management Dashboard**
 
-The finished sales management dashboard with first page which works as both dashboard and as overview of sales and budget, with two other pages focused on combining tables for necessary details and visualizations to show sales over time per customers and per products respectively.
+The completed dashboard offers:
 
-Final report can be downloaded using the link: [Sales_Report_Final.pbix](Sales_Report_Final.pbix). It needs Power BI Desktop installed in PC to open that file.
+Sales Overview: A high-level view of sales performance and budget comparison.
+Customer Details: Insights into customer-specific sales performance.
+Product Details: Analysis of product-specific sales trends.
+The dashboard allows filtering and interaction to cater to the diverse needs of sales managers and representatives.
 
-Below are the screenshots of the Sales_Report_Final.pbix report:
+## **Final Report**
+
+The finalized report file, Sales_Report_Final.pbix, can be accessed for further exploration in Power BI Desktop. Below are screenshots showcasing the report's capabilities:
+
+Sales Overview Dashboard: Highlights sales trends and budget comparisons.
+Customer Details View: Offers a deep dive into customer-specific sales data.
+Product Details View: Provides insights into product-specific performance.
 
 
-![Sales_Overview_Screenshot.png](Images/Sales_Overview_Screenshot.png)
-
-
-![Customer_Details_Screenshot.png](Images/Customer_Details_Screenshot.png)
-
-
-![Product_Details_Screenshot.png](Images/Product_Details_Screenshot.png)
-
-
-### _**Thank you for your valuable time**_
+### _**Thank you for reviewing this project!**_
